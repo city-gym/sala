@@ -1,0 +1,474 @@
+/*
+typescale:
+1. 5.65rem
+2. 4rem
+3. 2.82rem
+4. 2rem
+5. 1.41rem
+6. 1rem*/
+
+
+
+.hero-section {
+   height: 63vh;
+   background-image: url('images/triangles.png');
+   background-size: auto;
+   background-position: center;
+   display: flex;
+   padding-left: 10%;
+   overflow: hidden;
+}
+
+.slogan {
+   font-family: 'Russo One';
+   color: var(--black-90);
+   font-size: 5.65rem;
+   line-height: 6.5rem;
+   margin-bottom: 2rem;
+}
+
+.sub-slogan {
+   color: var(--black-90);
+   font-family: 'Inter';
+   background-color: rgb(214, 200, 49);
+   border: 2px var(--black-90) solid;
+   width: fit-content;
+   padding: 0.1rem 0.5rem;
+   border-radius: 0.5rem;
+   font-size: 1.41rem;
+   font-style: italic;
+   display: flex;
+}
+
+.sub-slogan span {
+   font-weight: 600;
+   font-style: normal;
+}
+
+.text-container1 {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 55%;
+   margin-bottom: 5%;
+}
+
+.image-container1 {
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   margin-bottom: 3vh;
+}
+
+.image-container1 img {
+   rotate: 4deg;
+   scale: 1.05;
+}
+
+.basic-info-section {
+   background-color: var(--primary);
+   position: relative;
+   padding-top: 3rem;
+   padding-bottom: 0rem;
+   transform: rotate(1deg);
+   height: 100%;
+   width: 105%;
+   transform-origin: center center;
+   margin-top: -2rem;
+   margin-left: -0.5rem;
+   margin-bottom: 5rem;
+   z-index: 10;
+}
+
+.basic-info-section .container-md {
+   transform: rotate(-1deg);
+}
+
+.bottom-background {
+   position: absolute;
+   bottom: -1.5rem;
+   right: -0.3rem;
+   background-color: var(--primary);
+   width: 100%;
+   height: 5rem;
+   rotate: -1deg;
+   z-index: -1;
+}
+
+
+.basic-info {
+   display: none;
+}
+
+.basic-info div img {
+   height: 1.5rem;
+   width: 1.5rem;
+}
+
+#program .grafic-text p {
+   font-family: 'Russo One';
+   font-size: 2rem;
+   font-weight: 500;
+   color: var(--black-90);
+   margin-bottom: 1rem;
+   text-align: center;
+}
+
+#program {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.timetable .col-md-6:nth-of-type(1) {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.timetable {
+   margin-bottom: 0rem;
+   margin-top: 2rem;
+   user-select: none;
+}
+
+.first {
+   display: flex;
+   align-items: flex-start;
+   justify-content: ;
+   font-family: 'Inter';
+}
+
+.first div p {
+   margin: 0;
+}
+
+.date-concrete {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   margin-bottom: 0rem;
+}
+
+.date-concrete .hours {
+   font-family: 'Inter';
+   color: var(--black);
+   font-size: 1rem;
+   font-weight: 600;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+.date-concrete .days {
+   font-family: 'Inter';
+   color: var(--black);
+   font-size: 1rem;
+   width: 7rem;
+}
+
+.hours p,
+.days p {
+   margin-bottom: 1.5rem;
+}
+
+.inchis-deschis {
+   font-family: 'Inter';
+   font-size: 0.9rem;
+   border-radius: 0.5rem;
+   color: var(--black-5);
+   background-color: var(--black-90);
+   padding: 0 1rem;
+   margin-top: 0.5rem;
+   margin-bottom: 2rem;
+   text-align: center;
+}
+
+#deschis,
+#inchis {
+   display: none;
+   align-self: center;
+   margin: 0;
+}
+
+
+@media(max-width:1630px) {
+   .hero-section {
+      padding-left: 2%;
+      position: relative;
+   }
+
+   .text-container1 {
+      width: 60%;
+   }
+
+   .image-container1 {
+      width: 40%;
+   }
+}
+
+
+@media(max-width:1282px) {
+   .slogan {
+      font-size: 5.2rem;
+      line-height: 5.9rem;
+      margin-bottom: 1.5rem;
+   }
+
+   .sub-slogan {
+      font-size: 1.2rem;
+   }
+
+   .image-container1 img {
+      scale: 0.95;
+   }
+}
+
+
+@media(max-width:1199px) {
+   .sub-slogan {
+      font-size: 1.15rem;
+   }
+
+   .slogan {
+      font-size: 4.8rem;
+      line-height: 5.2rem;
+      margin-bottom: 1rem;
+   }
+}
+
+@media(max-width:975px) {
+   .sub-slogan {
+      flex-direction: column;
+      text-align: center;
+      letter-spacing: 1.5px;
+   }
+
+   .sub-slogan span {
+      letter-spacing: 0;
+   }
+}
+
+
+
+@media(max-width:991px) {
+   .text-container1 {
+      margin-bottom: 8%;
+   }
+}
+
+
+@media(max-width:931px) {
+
+
+   .text-container1 {
+      align-items: center;
+   }
+
+   .text-container1 {
+      width: 70%;
+   }
+
+   .image-container1 {
+      width: 30%;
+   }
+
+   .image-container1 img {
+      margin-left: -2rem;
+   }
+}
+
+@media(max-width:815px) {
+   .hero-section {
+      padding: 0 5%;
+   }
+
+   .slogan {
+      font-size: 4.2rem;
+      line-height: 4.6rem;
+   }
+
+   .sub-slogan {
+      font-size: 1.05rem;
+   }
+}
+
+@media(max-width:767px) {
+   .text-container1 {
+      width: 100%;
+   }
+
+   .image-container1 {
+      width: 0%;
+   }
+
+   .slogan {
+      margin-bottom: 1.5rem;
+      font-size: 4.5rem;
+      line-height: 5rem;
+   }
+
+   .sub-slogan {
+      font-size: 1.1rem;
+   }
+
+   .timetable .col-md-6:nth-of-type(1) {
+      align-items: flex-end;
+   }
+
+   .timetable p {
+      margin-left: 0;
+      margin-bottom: 1.5rem;
+   }
+
+   .date-concrete {
+      gap: 2rem;
+      margin-bottom: 0.5rem;
+   }
+
+   .timetable .col-md-6:nth-of-type(1) {
+      margin-top: -0.7rem;
+      margin-bottom: 0.7rem;
+   }
+
+   .inchis-deschis {
+      margin-top: 0;
+   }
+}
+
+@media(max-width:630px) {
+   .slogan {
+      margin-bottom: 1rem;
+      font-size: 4rem;
+      line-height: 4.7rem;
+   }
+
+   .sub-slogan {
+      font-size: 1rem;
+   }
+}
+
+
+@media(max-width:576px) {
+
+   .hero-section .container-md #program {
+      padding-top: 2.5rem;
+   }
+
+   .date-concrete .hours {
+      font-size: 1rem;
+   }
+}
+
+@media(max-width:550px) {
+   .inchis-deschis{
+      margin-bottom: 3.5rem;
+   }
+
+   .basic-info {
+      display: flex;
+      justify-content: center;
+      gap: 3.5rem;
+      margin-top: 0.5rem;
+      
+   }
+
+   .basic-info div {
+      display: flex;
+      color: var(--primary);
+   }
+
+
+   .bottom-background {
+      background-color: var(--black-90);
+      bottom: -4.5rem;
+      height: 6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+   }
+
+   .bottom-background .basic-info div img{
+      margin-right: 0.3rem;
+      height: 1.4rem;
+      width: 1.4rem;
+   }
+
+   .inchis-deschis{
+      font-size: 0.9rem;
+      border-radius: 0.7rem;
+   }
+}
+
+@media(max-width:500px) {
+   .slogan {
+      margin-bottom: 1rem;
+      font-size: 3.5rem;
+      line-height: 4.2rem;
+      text-align: center;
+   }
+
+   .sub-slogan {
+      font-size: 0.93rem;
+      letter-spacing: 0.5px;
+   }
+
+   #program .grafic-text p{
+      font-size: 1.7rem;
+   }
+
+   .date-concrete .days, .date-concrete .hours{
+      font-size : 0.9rem;
+   }
+
+   .date-concrete {
+      gap: 0rem;
+   }
+
+   .bottom-background{
+      height: 5rem;
+   } 
+
+   .bottom-background img{
+      height: 1rem;
+   }
+}
+
+@media(max-width:435px) {
+   .hero-section {
+      height: 60vh;
+   }
+
+   .timetable p {
+      font-size: 1.4rem;
+   }
+
+   .slogan {
+      margin-bottom: 1rem;
+      font-size: 3.1rem;
+      line-height: 3.5rem;
+   }
+
+   .sub-slogan {
+      letter-spacing: 0.3px;
+      padding: 0 0.5rem;
+      font-size: 0.9rem;
+   }
+
+   .text-container1 {
+      margin-bottom: 15%;
+   }
+
+   .inchis-deschis{
+      font-size: 0.8rem;
+      border-radius: 0.4rem;
+   }
+}
+
+@media(max-width:385px){
+   .slogan{
+      font-size: 2.9rem;
+   }
+}

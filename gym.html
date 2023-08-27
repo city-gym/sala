@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="header.css">
+   <link rel="stylesheet" href="rest.css">
+   <link rel="stylesheet" href="basic-info.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Russo+One&family=Vollkorn:wght@900&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+   <title>Document</title>
+</head>
+
+<body>
+   <div class="cover">
+      <header class="container-xl">
+         <div class="row" id="header-row">
+            <div class="logo col-lg-5 col-3">
+               <p>CITY GYM</p>
+            </div>
+
+            <div class="others col-lg-4 col-8">
+               <div class="location">
+                  <div>
+                     <img src="images/map-pin-2-fill.png" alt="">
+                  </div>
+                  <div>
+                     <p>Locatie:</p>
+                     <p class="actual-data">Alba Iulia 89/3</p>
+                  </div>
+               </div>
+
+               <div class="location">
+                  <div>
+                     <img src="images/phone-fill.png" alt="">
+                  </div>
+                  <div>
+                     <p>Contacte:</p>
+                     <p class="actual-data">+69326969</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-3 col-1" id="language-container">
+               <div class="language">
+                  <div class="active" onclick="setActiveLanguage('ro')">Ro</div>
+                  <div onclick="setActiveLanguage('ru')">Ru</div>
+               </div>
+            </div>
+         </div>
+      </header>
+   </div>
+
+
+
+   <section class="hero-section">
+      <div class="text-container1">
+         <div class="slogan">
+            <div>FII PUTERNIC</div>
+            <div>FII IN FORMĂ</div>
+         </div>
+         <div class="sub-slogan">
+            <div>
+               Atinge-ți obiectivele sportive alături
+            </div>
+            <div>
+               &nbsp;de comunitatea <span>CITY GYM</span>
+            </div>
+         </div>
+      </div>
+
+      <div class="image-container1">
+         <img src="images/kettlebell.png" alt="">
+      </div>
+   </section>
+
+   <section class="basic-info-section">
+      <div class="container-md">
+         <div class="row">
+            <div id="program" class="col-lg-6 mx-auto">
+               <div class="grafic-text">
+                  <p>Grafic De Lucru:</p>
+               </div>
+               <div class="date-concrete">
+                  <div class="days">
+                     <p>Luni - Vineri:</p>
+                     <p>Sâmbătă:</p>
+                     <p>Duminică:</p>
+                  </div>
+                  <div class="hours">
+                     <p>9:00 - 22:00</p>
+                     <p>10:00 - 17:00</p>
+                     <p>10:00 - 20:00</p>
+                  </div>
+               </div>
+               <div class="inchis-deschis">
+                  <p id="deschis">Deschis la moment!</p>
+                  <p id="inchis">Închis la moment</p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="bottom-background">
+         <div class="basic-info">
+            <div>
+               <img src="images/map-pin-2-fill.png" alt="">
+               <p>Alba Iulia 89/3</p>
+            </div>
+            <div>
+               <img src="images/phone-fill.png" alt="">
+               <p>+69436969</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="prices-section" style="overflow: hidden;">
+      <!-- <p class="text">PRETURI:</p> -->
+      <div class="container-lg info-boxes">
+         <div class="row">
+            <div class="col-md-4 col-sm-6 col-12">
+               <div class="info-box" id="info-box-1">
+                  <div class="image-container">
+                     <img src="images/80LEI.png" class="img-fluid">
+                  </div>
+                  <div class="lower-text" style="flex-grow: 1;">
+                     <p id="single-p">O ȘEDINȚĂ</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-12">
+               <div class="info-box" id="info-box-2">
+                  <div class="image-container">
+                     <img src="images/450LEI.png" class="img-fluid">
+                  </div>
+                  <div class="lower-text">
+                     <p>1 LUNĂ</p>
+                     <p>nelimitat</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-12">
+               <div class="info-box" id="info-box-3">
+                  <div class="image-container">
+                     <img src="images/400LEI.png" class="img-fluid">
+                  </div>
+                  <div class="lower-text">
+                     <p>1 LUNĂ</p>
+                     <p>3x pe săptămână</p>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="col-md-4 col-sm-6 col-12">
+               <div class="info-box" id="info-box-4">
+                  <div class="image-container">
+                     <div class="background" id="bg-1"></div>
+                     <img src="images/2200LEI.png" class="img-fluid">
+                  </div>
+                  <div class="lower-text">
+                     <p>1 LUNĂ</p>
+                     <p>cu antrenor</p>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-12">
+               <div class="info-box" id="info-box-5">
+                  <div class="image-container">
+                     <img src="images/1200LEI.png" class="img-fluid">
+                  </div>
+                  <div class="lower-text">
+                     <p>3 LUNI</p>
+                     <p>nelimitat</p>
+                  </div>
+               </div>
+            </div>
+
+
+
+            <div class="col-md-4 col-sm-6 col-12">
+               <div class="info-box" id="info-box-6">
+                  <div class="image-container">
+                     <img src="images/3300LEI.png" class="img-fluid">
+                  </div>
+                  <div class="lower-text">
+                     <p>12 LUNI</p>
+                     <p>nelimitat</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+   <section class="media-section">
+      <div class="swiper-container">
+         <div class="swiper">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <img src="images/photo-1.jpg" class="img-fluid">
+               </div>
+               <div class="swiper-slide">
+                  <img src="images/photo-2.jpg" class="img-fluid">
+               </div>
+               <div class="swiper-slide">
+                  <img src="images/photo-3.jpg" class="img-fluid">
+               </div>
+               <div class="swiper-slide">
+                  <img src="images/photo-4.jpg" class="img-fluid">
+               </div>
+               <div class="swiper-slide">
+                  <img src="images/photo-5.jpg" class="img-fluid">
+               </div>
+            </div>
+
+            <div class="swiper-button-prev">
+            </div>
+            <div class="swiper-button-next">
+            </div>
+
+            <div class="swiper-scrollbar" style="background-color: yellow;"></div>
+         </div>
+      </div>
+
+
+
+
+      <div id="posts" class="container-lg">
+         <div class="photos row">
+            <div class="col-sm-3 col-6">
+               <a href="https://www.instagram.com/p/CsiRIwGgZDV/">
+                  <video poster="images/thumbnail-1.png" src="images/video-1.mp4" type="video/mp4" class="clip"
+                  loop></video>
+               </a>
+            </div>
+
+            <div class="col-sm-3 col-6">
+               <video poster="images/thumbnail-3.png" src="images/video-3.mp4" type="video/mp4" class="clip"
+                  loop></video>
+            </div>
+
+            <div class="col-sm-3 col-6">
+               <video poster="images/thumbnail-4.png" src="images/video-4.mp4" type="video/mp4" class="clip"
+                  loop></video>
+            </div>
+
+            <div class="col-sm-3 col-6">
+               <video poster="images/thumbnail-5.png" src="images/video-5.mp4" type="video/mp4" class="clip"
+                  loop></video>
+            </div>
+         </div>
+      </div>
+
+      <div class="sm-container">
+         <a href="">
+            <img src="images/instagram-fill (1).png" class="sm" alt="">
+         </a>
+         <a href="">
+            <img src="images/facebook-fill (1).png" class="sm" alt="">
+         </a>
+         <a href="">
+            <img src="images/tiktok-fill (1).png" class="sm" alt="">
+         </a>
+      </div>
+
+   </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+   <script>
+
+      const clip = document.querySelectorAll('.clip')
+      for (let i = 0; i < clip.length; i++) {
+         clip[i].addEventListener('mouseover', function (e) {
+            clip[i].play()
+         })
+         clip[i].addEventListener('mouseout', function (e) {
+            clip[i].pause()
+         })
+      }
+
+
+
+      const swiper = new Swiper('.swiper', {
+         direction: 'horizontal',
+         loop: true,
+
+         pagination: {
+            el: '.swiper-pagination',
+         },
+
+         navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+         },
+
+         scrollbar: {
+            el: '.swiper-scrollbar',
+         },
+      });
+
+
+      function setActiveLanguage(language) {
+         const langElements = document.querySelectorAll('.language div');
+         const slogan1Element = document.getElementById('slogan1');
+         const slogan2Element = document.getElementById('slogan2');
+         const subSloganElement = document.getElementById('sub-slogan');
+         const preturiElement = document.getElementById('preturi');
+
+         langElements.forEach(element => element.classList.remove('active'));
+         if (language === 'ro') {
+            langElements[0].classList.add('active');
+            slogan1Element.textContent = 'FII PUTERNIC, ';
+            slogan2Element.textContent = 'FII IN FORMA';
+            subSloganElement.textContent = 'Atinge-ti obiectivele sportive alaturi de comuniutatea CITY GYM';
+            preturiElement.textContent = 'Preturi';
+         } else if (language === 'ru') {
+            langElements[1].classList.add('active');
+            slogan1Element.textContent = 'БУДЬ СИЛНЫМ,';
+            slogan2Element.textContent = ' БУДЬ В ФОРМЕ';
+            subSloganElement.textContent = 'Достигайте своих спортивных целей с сообществом CITY GYM';
+            preturiElement.textContent = 'Цены';
+         }
+      }
+
+      const currentDate = new Date();
+      const currentDay = currentDate.getDay();
+      const currentHour = currentDate.getHours();
+      const deschisElement = document.getElementById('deschis');
+      const inchisElement = document.getElementById('inchis');
+
+      const openingHours = [
+         { day: 'Luni - Vineri', hours: '9:00 - 22:00' },
+         { day: 'Sambata', hours: '10:00 - 17:00' },
+         { day: 'Duminica', hours: '10:00 - 20:00' }
+      ];
+
+      for (let i = 0; i < openingHours.length; i++) {
+         const { day, hours } = openingHours[i];
+
+         if (
+            (currentDay === 0 && day.includes('Duminica')) ||
+            (currentDay === 6 && day.includes('Sambata')) ||
+            (currentDay >= 1 && currentDay <= 5 && day.includes('Luni - Vineri'))
+         ) {
+            const openingTime = parseInt(hours.split(':')[0]);
+            const closingTime = parseInt(hours.split('-')[1].split(':')[0]);
+
+            if (
+               (currentDay === 0 && currentHour >= openingTime && currentHour < closingTime) ||
+               (currentDay === 6 && currentHour >= openingTime && currentHour < closingTime) ||
+               (currentDay >= 1 && currentDay <= 5 && currentHour >= 9 && currentHour < 22)
+            ) {
+               deschisElement.style.display = 'block'; // Display "Deschis la moment!"
+               inchisElement.style.display = 'none';
+            } else {
+               deschisElement.style.display = 'none';
+               inchisElement.style.display = 'block'; // Display "Închis la moment!"
+            }
+         }
+      }
+   </script>
+</body>
+
+</html>
