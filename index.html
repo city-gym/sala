@@ -38,7 +38,7 @@
                      <img src="images/map-pin-2-fill.png" alt="">
                   </div>
                   <div>
-                     <p>Locatie:</p>
+                     <p id="locatie">Locatie:</p>
                      <p class="actual-data">Alba Iulia 89/3</p>
                   </div>
                </div>
@@ -48,7 +48,7 @@
                      <img src="images/phone-fill.png" alt="">
                   </div>
                   <div>
-                     <p>Contacte:</p>
+                     <p id="contacte">Contacte:</p>
                      <p class="actual-data">+69326969</p>
                   </div>
                </div>
@@ -57,7 +57,7 @@
             <div class="col-lg-3 col-1" id="language-container">
                <div class="language">
                   <div class="active" onclick="setActiveLanguage('ro')">Ro</div>
-                  <div onclick="setActiveLanguage('ru')">Ru</div>
+                  <div onclick="setActiveLanguage('ru')">Ру</div>
                </div>
             </div>
          </div>
@@ -69,14 +69,14 @@
    <section class="hero-section">
       <div class="text-container1">
          <div class="slogan">
-            <div>FII PUTERNIC</div>
-            <div>FII IN FORMĂ</div>
+            <div id="slogan1">FII PUTERNIC</div>
+            <div id="slogan2">FII IN FORMĂ</div>
          </div>
          <div class="sub-slogan">
-            <div>
+            <div id="sub-slogan1">
                Atinge-ți obiectivele sportive alături
             </div>
-            <div>
+            <div id="sub-slogan2">
                &nbsp;de comunitatea <span>CITY GYM</span>
             </div>
          </div>
@@ -92,13 +92,13 @@
          <div class="row">
             <div id="program" class="col-lg-6 mx-auto">
                <div class="grafic-text">
-                  <p>Grafic De Lucru:</p>
+                  <p id="grafic">Grafic de Lucru:</p>
                </div>
                <div class="date-concrete">
                   <div class="days">
-                     <p>Luni - Vineri:</p>
-                     <p>Sâmbătă:</p>
-                     <p>Duminică:</p>
+                     <p id="luni">Luni - Vineri:</p>
+                     <p id="sambata">Sâmbătă:</p>
+                     <p id="duminica">Duminică:</p>
                   </div>
                   <div class="hours">
                      <p>9:00 - 22:00</p>
@@ -150,8 +150,8 @@
                      <img src="images/450LEI.png" class="img-fluid">
                   </div>
                   <div class="lower-text">
-                     <p>1 LUNĂ</p>
-                     <p>nelimitat</p>
+                     <p id="o-luna">1 LUNĂ</p>
+                     <p id="nelimitat">nelimitat</p>
                   </div>
                </div>
             </div>
@@ -162,8 +162,8 @@
                      <img src="images/400LEI.png" class="img-fluid">
                   </div>
                   <div class="lower-text">
-                     <p>1 LUNĂ</p>
-                     <p>3x pe săptămână</p>
+                     <p id="o-luna">1 LUNĂ</p>
+                     <p id="thrice">3x pe săptămână</p>
                   </div>
                </div>
             </div>
@@ -176,8 +176,8 @@
                      <img src="images/2200LEI.png" class="img-fluid">
                   </div>
                   <div class="lower-text">
-                     <p>1 LUNĂ</p>
-                     <p>cu antrenor</p>
+                     <p id="o-luna">1 LUNĂ</p>
+                     <p id="antrenor">cu antrenor</p>
                   </div>
                </div>
             </div>
@@ -188,8 +188,8 @@
                      <img src="images/1200LEI.png" class="img-fluid">
                   </div>
                   <div class="lower-text">
-                     <p>3 LUNI</p>
-                     <p>nelimitat</p>
+                     <p id="3-luni">3 LUNI</p>
+                     <p id="nelimitat">nelimitat</p>
                   </div>
                </div>
             </div>
@@ -202,8 +202,8 @@
                      <img src="images/3300LEI.png" class="img-fluid">
                   </div>
                   <div class="lower-text">
-                     <p>12 LUNI</p>
-                     <p>nelimitat</p>
+                     <p id="12-luni">12 LUNI</p>
+                     <p id="nelimitat">nelimitat</p>
                   </div>
                </div>
             </div>
@@ -249,7 +249,7 @@
       <div id="posts" class="container-lg">
          <div class="photos row">
             <div class="col-sm-3 col-6">
-                  <video poster="images/thumbnail-1.png" src="images/video-1.mp4" type="video/mp4" class="clip"
+               <video poster="images/thumbnail-1.png" src="images/video-1.mp4" type="video/mp4" class="clip"
                   loop></video>
             </div>
 
@@ -271,13 +271,13 @@
       </div>
 
       <div class="sm-container">
-         <a href="">
+         <a href="https://www.instagram.com/citygym.md?fbclid=IwAR2xKz4-uKRe-fONV_t5GfZK2Fn1SeEwmGEuGw79N25kJSCGO2agz80mDu0">
             <img src="images/instagram-fill (1).png" class="sm" alt="">
          </a>
-         <a href="">
+         <a href="https://www.facebook.com/citygym.md/?locale=ro_RO">
             <img src="images/facebook-fill (1).png" class="sm" alt="">
          </a>
-         <a href="">
+         <a href="https://www.tiktok.com/@citygym.md">
             <img src="images/tiktok-fill (1).png" class="sm" alt="">
          </a>
       </div>
@@ -286,100 +286,8 @@
 
    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+   <script src="gym.js"></script>
 
-   <script>
-
-      const clip = document.querySelectorAll('.clip')
-      for (let i = 0; i < clip.length; i++) {
-         clip[i].addEventListener('mouseover', function (e) {
-            clip[i].play()
-         })
-         clip[i].addEventListener('mouseout', function (e) {
-            clip[i].pause()
-         })
-      }
-
-
-
-      const swiper = new Swiper('.swiper', {
-         direction: 'horizontal',
-         loop: true,
-
-         pagination: {
-            el: '.swiper-pagination',
-         },
-
-         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-         },
-
-         scrollbar: {
-            el: '.swiper-scrollbar',
-         },
-      });
-
-
-      function setActiveLanguage(language) {
-         const langElements = document.querySelectorAll('.language div');
-         const slogan1Element = document.getElementById('slogan1');
-         const slogan2Element = document.getElementById('slogan2');
-         const subSloganElement = document.getElementById('sub-slogan');
-         const preturiElement = document.getElementById('preturi');
-
-         langElements.forEach(element => element.classList.remove('active'));
-         if (language === 'ro') {
-            langElements[0].classList.add('active');
-            slogan1Element.textContent = 'FII PUTERNIC, ';
-            slogan2Element.textContent = 'FII IN FORMA';
-            subSloganElement.textContent = 'Atinge-ti obiectivele sportive alaturi de comuniutatea CITY GYM';
-            preturiElement.textContent = 'Preturi';
-         } else if (language === 'ru') {
-            langElements[1].classList.add('active');
-            slogan1Element.textContent = 'БУДЬ СИЛНЫМ,';
-            slogan2Element.textContent = ' БУДЬ В ФОРМЕ';
-            subSloganElement.textContent = 'Достигайте своих спортивных целей с сообществом CITY GYM';
-            preturiElement.textContent = 'Цены';
-         }
-      }
-
-      const currentDate = new Date();
-      const currentDay = currentDate.getDay();
-      const currentHour = currentDate.getHours();
-      const deschisElement = document.getElementById('deschis');
-      const inchisElement = document.getElementById('inchis');
-
-      const openingHours = [
-         { day: 'Luni - Vineri', hours: '9:00 - 22:00' },
-         { day: 'Sambata', hours: '10:00 - 17:00' },
-         { day: 'Duminica', hours: '10:00 - 20:00' }
-      ];
-
-      for (let i = 0; i < openingHours.length; i++) {
-         const { day, hours } = openingHours[i];
-
-         if (
-            (currentDay === 0 && day.includes('Duminica')) ||
-            (currentDay === 6 && day.includes('Sambata')) ||
-            (currentDay >= 1 && currentDay <= 5 && day.includes('Luni - Vineri'))
-         ) {
-            const openingTime = parseInt(hours.split(':')[0]);
-            const closingTime = parseInt(hours.split('-')[1].split(':')[0]);
-
-            if (
-               (currentDay === 0 && currentHour >= openingTime && currentHour < closingTime) ||
-               (currentDay === 6 && currentHour >= openingTime && currentHour < closingTime) ||
-               (currentDay >= 1 && currentDay <= 5 && currentHour >= 9 && currentHour < 22)
-            ) {
-               deschisElement.style.display = 'block'; // Display "Deschis la moment!"
-               inchisElement.style.display = 'none';
-            } else {
-               deschisElement.style.display = 'none';
-               inchisElement.style.display = 'block'; // Display "Închis la moment!"
-            }
-         }
-      }
-   </script>
 </body>
 
 </html>
