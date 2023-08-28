@@ -18,9 +18,9 @@
    --black-5: #f4f4f4;
 }
 
-body {
+body, html {
    background-color: var(--black-10) !important;
-   overflow-x: hidden ;
+   overflow-x: hidden;
 }
 
 a {
