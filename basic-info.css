@@ -147,7 +147,7 @@ typescale:
 .date-concrete {
    display: flex;
    align-items: center;
-   gap: 1rem;
+   gap: 1.5rem;
    margin-bottom: 0rem;
 }
 
@@ -168,9 +168,14 @@ typescale:
    width: 7rem;
 }
 
+
 .hours p,
 .days p {
    margin-bottom: 1.5rem;
+}
+
+#luni{
+   white-space: nowrap;
 }
 
 .inchis-deschis {
@@ -238,6 +243,18 @@ typescale:
    }
 }
 
+@media(max-width:1099px) {
+   .sub-slogan {
+      font-size: 1.1rem;
+   }
+
+   .slogan {
+      font-size: 4.4rem;
+      line-height: 5rem;
+      margin-bottom: 1rem;
+   }
+}
+
 @media(max-width:975px) {
    .sub-slogan {
       flex-direction: column;
@@ -247,6 +264,15 @@ typescale:
 
    .sub-slogan span {
       letter-spacing: 0;
+   }
+
+   .slogan{
+      font-size: 4.25rem;
+      line-height: 4.7rem;
+   }
+
+   .sub-slogan{
+      font-size: 1.05rem;
    }
 }
 
@@ -267,11 +293,11 @@ typescale:
    }
 
    .text-container1 {
-      width: 70%;
+      width: 75%;
    }
 
    .image-container1 {
-      width: 30%;
+      width: 25%;
    }
 
    .image-container1 img {
@@ -285,7 +311,7 @@ typescale:
    }
 
    .slogan {
-      font-size: 4.2rem;
+      font-size: 4rem;
       line-height: 4.6rem;
    }
 
@@ -359,9 +385,18 @@ typescale:
    .date-concrete .hours {
       font-size: 1rem;
    }
+
+   .slogan{
+      font-size: 3.8rem;
+   }
 }
 
 @media(max-width:550px) {
+   .slogan{
+      font-size: 3.5rem;
+      line-height: 4.5rem;
+   }
+
    .inchis-deschis{
       margin-bottom: 3.5rem;
    }
@@ -405,8 +440,8 @@ typescale:
 @media(max-width:500px) {
    .slogan {
       margin-bottom: 1rem;
-      font-size: 3.5rem;
-      line-height: 4.2rem;
+      font-size: 3.3rem;
+      line-height: 4.3rem;
       text-align: center;
    }
 
@@ -421,10 +456,6 @@ typescale:
 
    .date-concrete .days, .date-concrete .hours{
       font-size : 0.9rem;
-   }
-
-   .date-concrete {
-      gap: 0rem;
    }
 
    .bottom-background{
@@ -470,5 +501,32 @@ typescale:
 @media(max-width:385px){
    .slogan{
       font-size: 2.9rem;
+   }
+}
+
+@media(max-height:550px){
+   .hero-section{
+      height: 100vh;
+   }
+
+   .slogan{
+      font-size: 65px;
+   }
+
+   .sub-slogan{
+      font-size: 15px;
+      letter-spacing: 0.2px;
+   }
+
+   .text-container1{
+      margin-bottom: 5%;
+   }
+
+   .hero-section{
+      padding: 0 0;
+   }
+
+   .hero-section img{
+      height: 25rem;
    }
 }
