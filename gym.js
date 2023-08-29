@@ -43,19 +43,24 @@ const clip = document.querySelectorAll('.clip')
          const duminicaElement = document.getElementById('duminica');
          const inchisElement = document.getElementById('inchis');
          const deschisElement = document.getElementById('deschis');
-         const olunaElement = document.getElementById('o-luna');
+      
+         const olunaElements = document.querySelectorAll('.o-luna');
          const treiluniElement = document.getElementById('3-luni');
          const doispeluniElement = document.getElementById('12-luni');
-         const nelimitatElement = document.getElementById('nelimitat');
+         const nelimitat1Element = document.getElementById('nelimitat-1');
+         const nelimitat2Element = document.getElementById('nelimitat-2'); // Add this element
+         const nelimitat3Element = document.getElementById('nelimitat-3'); // Add this element
          const antrenorElement = document.getElementById('antrenor');
          const singlepElement = document.getElementById('single-p');
+         const blaElement = document.getElementById('bla');
 
+      
          langElements.forEach(element => element.classList.remove('active'));
          if (language === 'ro') {
             langElements[0].classList.add('active');
             locatieElements.textContent = 'Locatie:';
             contacteElements.textContent = 'Contacte:';
-            slogan1Element.textContent = 'FII PUTERNIC, ';
+            slogan1Element.textContent = 'FII PUTERNIC,';
             slogan2Element.textContent = 'FII IN FORMA';
             subSlogan1Element.textContent = 'Atinge-ti obiectivele sportive alaturi';
             subSlogan2Element.textContent = 'de comunitatea CITY GYM';
@@ -65,17 +70,22 @@ const clip = document.querySelectorAll('.clip')
             duminicaElement.textContent = 'Duminica:';
             inchisElement.textContent = 'Inchis la moment';
             deschisElement.textContent = 'Deschis la moment!';
-            olunaElement.textContent = '1 LUNĂ';
+            blaElement.textContent = '1 LUNĂ';
+            
+            // Translate elements with the class 'o-luna'
+            olunaElements.forEach(element => element.textContent = '1 LUNĂ');
             treiluniElement.textContent = '3 LUNI';
             doispeluniElement.textContent = '12 LUNI';
-            nelimitatElement.textContent = 'nelimitat';
+            nelimitat1Element.textContent = 'nelimitat';
+            nelimitat2Element.textContent = 'nelimitat'; // Add this line
+            nelimitat3Element.textContent = 'nelimitat'; // Add this line
             antrenorElement.textContent = 'cu antrenor';
-            singlepElement.textContent = 'O ȘEDINȚĂ'
+            singlepElement.textContent = 'O ȘEDINȚĂ';
          } else if (language === 'ru') {
             langElements[1].classList.add('active');
             locatieElements.textContent = 'Расположение:';
             contacteElements.textContent = 'Контакты:';
-            slogan1Element.textContent = 'БУДЬ СИЛНЫМ,';
+            slogan1Element.textContent = 'БУДЬ СИЛЬНЫМ,';
             slogan2Element.textContent = ' БУДЬ В ФОРМЕ';
             subSlogan1Element.textContent = 'Достигайте своих спортивных целей';
             subSlogan2Element.textContent = 'с сообществом CITY GYM';
@@ -85,14 +95,23 @@ const clip = document.querySelectorAll('.clip')
             duminicaElement.textContent = 'Воскресенье:';
             inchisElement.textContent = 'Закрыто на данный момент';
             deschisElement.textContent = 'Открыто на данный момент!';
-            olunaElement.textContent = '1 МЕСЯЦ';
+            blaElement.textContent = '1 МЕСЯЦ';
+
+            
+            // Translate elements with the class 'o-luna'
+            olunaElements.forEach(element => element.textContent = '1 МЕСЯЦ');
             treiluniElement.textContent = '3 МЕСЯЦА';
             doispeluniElement.textContent = '12 МЕСЯЦА';
-            nelimitatElement.textContent = 'неограниченный';
+            nelimitat1Element.textContent = 'неограниченный';
+            nelimitat2Element.textContent = 'неограниченный'; 
+            nelimitat3Element.textContent = 'неограниченный'; 
             antrenorElement.textContent = 'с тренером';
             singlepElement.textContent = 'СЕССИЯ';
          }
       }
+      
+      
+      
 
       const currentDate = new Date();
       const currentDay = currentDate.getDay();
