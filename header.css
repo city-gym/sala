@@ -7,7 +7,7 @@
 
 
 :root {
-   --primary: #d6c831;
+   --primary: #dadd1f;
    --secondary: #807638;
    --black: #222221;
    --black-90: #323234;
@@ -71,6 +71,7 @@ header {
    white-space: nowrap;
    font-family: 'Inter';
    scale: 1.05;
+   position: relative;
 }
 
 .location p {
@@ -127,6 +128,18 @@ header {
    margin: 0;
    white-space: nowrap;
 }
+
+.map{
+   display: none;
+   position: absolute;
+   top: 40px;
+   left: -50%;
+}
+
+.location:hover .map{
+      display: flex;
+}
+
 
 .language {
    cursor: pointer;
