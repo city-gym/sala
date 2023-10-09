@@ -122,7 +122,7 @@ const clip = document.querySelectorAll('.clip')
       const openingHours = [
          { day: 'Luni - Vineri', hours: '9:00 - 22:00' },
          { day: 'Sambata', hours: '10:00 - 17:00' },
-         { day: 'Duminica', hours: '10:00 - 20:00' }
+         { day: 'Duminica', hours: '0:00 - 0:00' }
       ];
 
       for (let i = 0; i < openingHours.length; i++) {
