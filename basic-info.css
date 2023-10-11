@@ -30,7 +30,7 @@ typescale:
 .sub-slogan {
    color: var(--black-90);
    font-family: 'Inter';
-   background-color: rgb(214, 200, 49);
+   background-color: var(--primary);
    border: 2px var(--black-90) solid;
    width: fit-content;
    padding: 0.1rem 0.5rem;
@@ -67,7 +67,8 @@ typescale:
 }
 
 .basic-info-section {
-   background-color: var(--primary);
+   background-color: var(--black-25);
+   border-top: 2px var(--black-90) solid;
    position: relative;
    padding-top: 3rem;
    padding-bottom: 0rem;
@@ -89,8 +90,7 @@ typescale:
    position: absolute;
    bottom: -1.5rem;
    right: -0.3rem;
-   background-color: var(--primary);
-   width: 100%;
+   background-color: var(--black-25);   width: 100%;
    height: 5rem;
    rotate: -1deg;
    z-index: -1;
@@ -183,7 +183,7 @@ typescale:
    font-size: 0.9rem;
    border-radius: 0.5rem;
    color: var(--black-5);
-   background-color: var(--black-90);
+   background-color: var(--primary);
    padding: 0 1rem;
    margin-top: 0.5rem;
    margin-bottom: 2rem;
@@ -195,6 +195,8 @@ typescale:
    display: none;
    align-self: center;
    margin: 0;
+   color: var(--black-90);
+   font-weight: 500;
 }
 
 
