@@ -1,6 +1,6 @@
 /*info-boxes*/
 
-.text {
+.prices-text {
    font-size: 4rem;
    color: var(--black-90);
    text-align: center;
@@ -58,7 +58,8 @@
    align-items: center;
    justify-content: center;
    background-color: var(--black-90);
-   padding: 0.2rem 0;
+   padding: 0rem 0rem;
+   height: 3.5rem;
    width: 100%;
 }
 
@@ -83,12 +84,47 @@
    font-size: 0.9rem;
 }
 
-#single-p {
-   margin: 0.85rem 0;
+.triangle{
+   height: 1rem;
+   cursor: pointer;
+   -webkit-filter: contrast();
 }
 
+#menu{
+   background-color: var(--black-25);
+   display: none;
+   gap: 4rem;
+   padding: 1rem 0rem;
+   position: absolute;
+   bottom: -10rem;
+}
 
+#times{
+   margin-left: 2.5rem;
+}
 
+#prices{
+   margin-right: 2.5rem;
+   font-weight: 600;
+   font-size: 1.1rem;
+}
+
+.oluna-rest{
+   display: none;
+}
+
+.simple-prices{
+   margin-bottom: 5rem;
+}
+
+#show-menu{
+   background-color: rgba(0,0,0,0);
+   border: none;
+}
+
+#info-box-2{
+   position: relative;
+}
 
 /* posts */
 
@@ -140,6 +176,55 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+}
+
+.antrenori-section .col-6 img{
+   height: 100%;
+}
+
+.antrenori-section .antrenor-text{
+   text-align: center;
+   font-family: 'Russo One';
+   font-size: 2.82rem;
+}
+
+/* .antrenori-section .row .img-fluid{
+   height: 45rem
+} */
+
+.antrenor-1, .antrenor-2{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.antrenori-section{
+   margin-bottom: 5rem;
+}
+
+
+.antrenor{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+.antrenor-info{
+   background-color: rgba(109,109,109,0.7);
+   position: absolute;
+   bottom: 0;
+   font-family: Inter!important;
+   width: 96.5%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.name{
+   font-size: 2rem;
+   font-weight: 700;
+   color: var(--primary);
 }
 
 /* .photos {
@@ -276,8 +361,8 @@
       margin: 0px;
    }
    
-   #single-p{
-      height: 0.8rem;
+   .single-p{
+      height: 1rem;
       display: flex;
       justify-content: center;
       align-items: center;
