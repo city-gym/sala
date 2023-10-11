@@ -45,7 +45,10 @@
                   </div>
 
                   <div class="map">
-                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.9577904053162!2d28.761558008245927!3d47.041059065898075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cbd61b99dff66d%3A0x761b32a285b25dfa!2sFitnes%20Club%20CityGym!5e0!3m2!1sro!2s!4v1696859327225!5m2!1sro!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.9577904053162!2d28.761558008245927!3d47.041059065898075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cbd61b99dff66d%3A0x761b32a285b25dfa!2sFitnes%20Club%20CityGym!5e0!3m2!1sro!2s!4v1696859327225!5m2!1sro!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                </div>
 
@@ -109,7 +112,7 @@
                   <div class="hours">
                      <p>9:00 - 22:00</p>
                      <p>10:00 - 17:00</p>
-                     <p>10:00 - 20:00</p>
+                     <p>inchis</p>
                   </div>
                </div>
                <div class="inchis-deschis">
@@ -136,80 +139,133 @@
    </section>
 
    <section class="prices-section" style="overflow: hidden;">
-      <!-- <p class="text">PRETURI:</p> -->
-      <div class="container-lg info-boxes">
+      <p class="prices-text">PRETURILE NOASTRE:</p>
+      <section class="simple-prices">
+         <div class="container-lg info-boxes">
+            <div class="row">
+               <div class="col-md-4 col-sm-6 col-12">
+                  <div class="info-box" id="info-box-1">
+                     <div class="image-container">
+                        <img src="images/80LEI.png" class="img-fluid">
+                     </div>
+                     <div class="lower-text" style="flex-grow: 1;">
+                        <p>O ȘEDINȚĂ</p>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-md-4 col-sm-6 col-12">
+                  <div class="info-box" id="info-box-2">
+                     <div class="image-container">
+                        <img src="images/dela.png" class="img-fluid">
+                     </div>
+                     <div class="lower-text">
+                        <p>1 LUNĂ</p>
+                        <button id="show-menu">
+                           <img src="images/triangle.png" class="triangle">
+                        </button>
+                     </div>
+                     <div id="menu" class="oluna-rest">
+                        <div id="times">
+                           <p>2X pe saptamana</p>
+                           <p>3X pe saptamana</p>
+                           <p>nelimitat</p>
+                        </div>
+                        <div id="prices">
+                           <p>350 LEI</p>
+                           <p>450 LEI</p>
+                           <p>500 LEI</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-md-4 col-sm-6 col-12">
+                  <div class="info-box" id="info-box-3">
+                     <div class="image-container">
+                        <img src="images/400LEI.png" class="img-fluid">
+                     </div>
+                     <div class="lower-text">
+                        <p>3 LUNI</p>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="col-md-4 col-sm-6 col-12">
+                  <div class="info-box" id="info-box-4">
+                     <div class="image-container">
+                        <div class="background" id="bg-1"></div>
+                        <img src="images/2200LEI.png" class="img-fluid">
+                     </div>
+                     <div class="lower-text">
+                        <p>1 AN</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="trainer-prices">
+         <div class="container-lg info-boxes">
+            <p class="trainer-text" style="font-family: Inter; font-size: 2rem;">ANTRENAMENTE PERSONALE:</p>
+            <div class="row">
+               <div class="col-md-4 col-sm-6 col-12">
+                  <div class="info-box" id="info-box-4">
+                     <div class="image-container">
+                        <div class="background" id="bg-1"></div>
+                        <img src="images/400LEI.png" class="img-fluid">
+                     </div>
+                     <div class="lower-text">
+                        <p>1 ANTRENAMENT</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 col-12">
+                  <div class="info-box" id="info-box-4">
+                     <div class="image-container">
+                        <div class="background" id="bg-1"></div>
+                        <img src="images/1200LEI.png" class="img-fluid">
+                     </div>
+                     <div class="lower-text">
+                        <p>1 LUNA cu antrenor</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4 col-sm-6 col-12">
+                  <div class="info-box" id="info-box-4">
+                     <div class="image-container">
+                        <div class="background" id="bg-1"></div>
+                        <img src="images/3300LEI.png" class="img-fluid">
+                     </div>
+                     <div class="lower-text">
+                        <p>1 AN cu antrenor</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </section>
+
+   <section class="antrenori-section">
+      <p class="antrenor-text">ANTRENORII NOSTRI:</p>
+      <div class="container-md">
          <div class="row">
-            <div class="col-md-4 col-sm-6 col-12">
-               <div class="info-box" id="info-box-1">
-                  <div class="image-container">
-                     <img src="images/80LEI.png" class="img-fluid">
-                  </div>
-                  <div class="lower-text" style="flex-grow: 1;">
-                     <p id="single-p">O ȘEDINȚĂ</p>
-                  </div>
+            <div class="antrenor col-6">
+               <img src="images/trainer-1.avif" style="height: 70vh;">
+               <div class="antrenor-info" id="antrenor1-info">
+                  <p class="name">PETRU</p>
+                  <p class="experienta">7 ani experienta</p>
                </div>
             </div>
-
-            <div class="col-md-4 col-sm-6 col-12">
-               <div class="info-box" id="info-box-2">
-                  <div class="image-container">
-                     <img src="images/450LEI.png" class="img-fluid">
-                  </div>
-                  <div class="lower-text">
-                     <p class="o-luna">1 LUNĂ</p>
-                     <p id="nelimitat-1">nelimitat</p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-12">
-               <div class="info-box" id="info-box-3">
-                  <div class="image-container">
-                     <img src="images/400LEI.png" class="img-fluid">
-                  </div>
-                  <div class="lower-text">
-                     <p class="o-luna">1 LUNĂ</p>
-                     <p id="thrice">3x pe săptămână</p>
-                  </div>
-               </div>
-            </div>
-
-
-            <div class="col-md-4 col-sm-6 col-12">
-               <div class="info-box" id="info-box-4">
-                  <div class="image-container">
-                     <div class="background" id="bg-1"></div>
-                     <img src="images/2200LEI.png" class="img-fluid">
-                  </div>
-                  <div class="lower-text">
-                     <p id="bla">1 LUNĂ</p>
-                     <p id="antrenor">cu antrenor</p>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-12">
-               <div class="info-box" id="info-box-5">
-                  <div class="image-container">
-                     <img src="images/1200LEI.png" class="img-fluid">
-                  </div>
-                  <div class="lower-text">
-                     <p id="3-luni">3 LUNI</p>
-                     <p id="nelimitat-2">nelimitat</p>
-                  </div>
-               </div>
-            </div>
-
-
-            <div class="col-md-4 col-sm-6 col-12">
-               <div class="info-box" id="info-box-6">
-                  <div class="image-container">
-                     <img src="images/3300LEI.png" class="img-fluid">
-                  </div>
-                  <div class="lower-text">
-                     <p id="12-luni">12 LUNI</p>
-                     <p id="nelimitat-3">nelimitat</p>
-                  </div>
+   
+            <div class="antrenor col-6">
+               <img src="images/trainer-2.avif" style="height: 70vh;">
+               <div class="antrenor-info" id="antrenor2-info">
+                  <p class="name">EUGEN</p>
+                  <p class="experienta">10 ani experienta</p>
                </div>
             </div>
          </div>
@@ -296,16 +352,16 @@
    <script src="gym.js"></script>
 
    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-   (function(){
-   var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-   s1.async=true;
-   s1.src='https://embed.tawk.to/6517dd8510c0b257248720a4/1hbijikiv';
-   s1.charset='UTF-8';
-   s1.setAttribute('crossorigin','*');
-   s0.parentNode.insertBefore(s1,s0);
-   })();
+   <script type="text/javascript">
+      var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+      (function () {
+         var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+         s1.async = true;
+         s1.src = 'https://embed.tawk.to/6517dd8510c0b257248720a4/1hbijikiv';
+         s1.charset = 'UTF-8';
+         s1.setAttribute('crossorigin', '*');
+         s0.parentNode.insertBefore(s1, s0);
+      })();
    </script>
    <!--End of Tawk.to Script-->
 </body>
