@@ -5,6 +5,7 @@
    color: var(--black-90);
    text-align: center;
    font-family: 'Russo One';
+   margin-bottom: 4rem;
 }
 
 
@@ -30,6 +31,10 @@
    width: 100%;
 }
 
+#info-box-4 .image-container img{
+   aspect-ratio: 5/1;
+}
+
 .prices-section .col-md-4{
    padding: 1rem;
 }
@@ -41,16 +46,7 @@
    align-items: center;
    scale: 1.05;
 }
-/* 
- #info-box-1,
-#info-box-4 {
-   margin-right: -1rem;
-}
 
-#info-box-3,
-#info-box-6 {
-   margin-left: -1rem;
-} */
 
 .lower-text {
    display: flex;
@@ -90,40 +86,68 @@
    -webkit-filter: contrast();
 }
 
+.menu-info{
+   display: flex;
+   justify-content: space-between;
+}
+
 #menu{
-   background-color: var(--black-25);
+   background-color: var(--black-90);
+   /* display: none; */
+   opacity: 0;
+   transition: 0.7s;
+   gap: 0rem;
+   padding: 0.5rem 1rem;
    display: none;
-   gap: 4rem;
-   padding: 1rem 0rem;
-   position: absolute;
-   bottom: -10rem;
+   flex-direction: column;
+   width: 100%;
+   margin-top: -3.5rem;
+   z-index: 10;
 }
 
 #times{
-   margin-left: 2.5rem;
+   margin-left: 0rem;
+   color: var(--black-10);
 }
 
 #prices{
-   margin-right: 2.5rem;
+   margin-right: 0rem;
    font-weight: 600;
    font-size: 1.1rem;
-}
+   color: var(--black-10);
 
-.oluna-rest{
-   display: none;
 }
 
 .simple-prices{
    margin-bottom: 5rem;
 }
 
-#show-menu{
+#show-menu, #close-menu{
    background-color: rgba(0,0,0,0);
    border: none;
 }
 
 #info-box-2{
    position: relative;
+}
+
+.trainer-text{
+   font-weight: 500;
+   font-family: Inter; 
+   font-size: 2rem;
+   /* text-align: center; */
+   margin-bottom: 0;
+}
+
+.antrenori-section .col-6 img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.trainer-img-container{
+   width: auto;
+   height: 70vh;
 }
 
 /* posts */
@@ -178,14 +202,11 @@
    align-items: center;
 }
 
-.antrenori-section .col-6 img{
-   height: 100%;
-}
 
 .antrenori-section .antrenor-text{
    text-align: center;
    font-family: 'Russo One';
-   font-size: 2.82rem;
+   font-size: 4rem;
 }
 
 /* .antrenori-section .row .img-fluid{
