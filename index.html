@@ -112,7 +112,7 @@
                   <div class="hours">
                      <p>9:00 - 22:00</p>
                      <p>10:00 - 17:00</p>
-                     <p>inchis</p>
+                     <p id="inchisd">inchis</p>
                   </div>
                </div>
                <div class="inchis-deschis">
@@ -139,8 +139,9 @@
    </section>
 
    <section class="prices-section" style="overflow: hidden;">
-      <p class="prices-text">PRETURILE NOASTRE:</p>
-      <section class="simple-prices">
+      <p class="prices-text">PRETURILE NOASTRE</p>
+      <section class="simple-prices container-lg">
+         <p class="trainer-text">Sala de Forta:</p>
          <div class="container-lg info-boxes">
             <div class="row">
                <div class="col-md-4 col-sm-6 col-12">
@@ -159,31 +160,40 @@
                      <div class="image-container">
                         <img src="images/dela.png" class="img-fluid">
                      </div>
-                     <div class="lower-text">
+
+                     <div class="lower-text" style="width: 100%;">
                         <p>1 LUNĂ</p>
                         <button id="show-menu">
                            <img src="images/triangle.png" class="triangle">
                         </button>
                      </div>
-                     <div id="menu" class="oluna-rest">
-                        <div id="times">
-                           <p>2X pe saptamana</p>
-                           <p>3X pe saptamana</p>
-                           <p>nelimitat</p>
+                     <div id="menu">
+                        <div class="menu-info">
+                           <div id="times">
+                              <p>2X pe saptamana</p>
+                              <p>3X pe saptamana</p>
+                              <p style="margin-bottom: 0;">nelimitat</p>
+                           </div>
+                           <div id="prices">
+                              <p>350 LEI</p>
+                              <p>450 LEI</p>
+                              <p style="margin-bottom: 0;">550 LEI</p>
+                           </div>
                         </div>
-                        <div id="prices">
-                           <p>350 LEI</p>
-                           <p>450 LEI</p>
-                           <p>500 LEI</p>
-                        </div>
+                        <button id="close-menu">
+                           <img src="images/triangle.png" class="triangle" style="rotate: 180deg; ">
+                        </button>
                      </div>
+
                   </div>
                </div>
+
+
 
                <div class="col-md-4 col-sm-6 col-12">
                   <div class="info-box" id="info-box-3">
                      <div class="image-container">
-                        <img src="images/400LEI.png" class="img-fluid">
+                        <img src="images/1350LEI.png" class="img-fluid">
                      </div>
                      <div class="lower-text">
                         <p>3 LUNI</p>
@@ -192,15 +202,15 @@
                </div>
 
 
-               <div class="col-md-4 col-sm-6 col-12">
+               <div class="col-12">
                   <div class="info-box" id="info-box-4">
                      <div class="image-container">
                         <div class="background" id="bg-1"></div>
-                        <img src="images/2200LEI.png" class="img-fluid">
+                        <img src="images/1AN.png" class="img-fluid">
                      </div>
-                     <div class="lower-text">
+                     <!-- <div class="lower-text">
                         <p>1 AN</p>
-                     </div>
+                     </div> -->
                   </div>
                </div>
             </div>
@@ -209,13 +219,13 @@
 
       <section class="trainer-prices">
          <div class="container-lg info-boxes">
-            <p class="trainer-text" style="font-family: Inter; font-size: 2rem;">ANTRENAMENTE PERSONALE:</p>
+            <p class="trainer-text">ANTRENAMENTE PERSONALE:</p>
             <div class="row">
                <div class="col-md-4 col-sm-6 col-12">
-                  <div class="info-box" id="info-box-4">
+                  <div class="info-box" id="info-box-5">
                      <div class="image-container">
                         <div class="background" id="bg-1"></div>
-                        <img src="images/400LEI.png" class="img-fluid">
+                        <img src="images/135LEI.png" class="img-fluid">
                      </div>
                      <div class="lower-text">
                         <p>1 ANTRENAMENT</p>
@@ -223,10 +233,10 @@
                   </div>
                </div>
                <div class="col-md-4 col-sm-6 col-12">
-                  <div class="info-box" id="info-box-4">
+                  <div class="info-box" id="info-box-6">
                      <div class="image-container">
                         <div class="background" id="bg-1"></div>
-                        <img src="images/1200LEI.png" class="img-fluid">
+                        <img src="images/3300LEI.png" class="img-fluid">
                      </div>
                      <div class="lower-text">
                         <p>1 LUNA cu antrenor</p>
@@ -234,10 +244,10 @@
                   </div>
                </div>
                <div class="col-md-4 col-sm-6 col-12">
-                  <div class="info-box" id="info-box-4">
+                  <div class="info-box" id="info-box-7">
                      <div class="image-container">
                         <div class="background" id="bg-1"></div>
-                        <img src="images/3300LEI.png" class="img-fluid">
+                        <img src="images/4900LEI.png" class="img-fluid">
                      </div>
                      <div class="lower-text">
                         <p>1 AN cu antrenor</p>
@@ -254,15 +264,19 @@
       <div class="container-md">
          <div class="row">
             <div class="antrenor col-6">
-               <img src="images/trainer-1.avif" style="height: 70vh;">
+               <div class="trainer-img-container">
+                  <img src="images/trainer-1.avif" class="trainer-photo">
+               </div>
                <div class="antrenor-info" id="antrenor1-info">
                   <p class="name">PETRU</p>
                   <p class="experienta">7 ani experienta</p>
                </div>
             </div>
-   
+
             <div class="antrenor col-6">
-               <img src="images/trainer-2.avif" style="height: 70vh;">
+               <div class="trainer-img-container">
+                  <img src="images/trainer-2.avif" class="trainer-photo">
+               </div>
                <div class="antrenor-info" id="antrenor2-info">
                   <p class="name">EUGEN</p>
                   <p class="experienta">10 ani experienta</p>
