@@ -53,6 +53,8 @@ const clip = document.querySelectorAll('.clip')
          const antrenorElement = document.getElementById('antrenor');
          const singlepElement = document.getElementById('single-p');
          const blaElement = document.getElementById('bla');
+         const inchisdElement = document.getElementById('inchisd');
+
 
       
          langElements.forEach(element => element.classList.remove('active'));
@@ -71,6 +73,7 @@ const clip = document.querySelectorAll('.clip')
             inchisElement.textContent = 'Inchis la moment';
             deschisElement.textContent = 'Deschis la moment!';
             blaElement.textContent = '1 LUNĂ';
+            inchisdElement.textContent = 'inchis';
             
             // Translate elements with the class 'o-luna'
             olunaElements.forEach(element => element.textContent = '1 LUNĂ');
@@ -96,6 +99,7 @@ const clip = document.querySelectorAll('.clip')
             inchisElement.textContent = 'Закрыто на данный момент';
             deschisElement.textContent = 'Открыто на данный момент!';
             blaElement.textContent = '1 МЕСЯЦ';
+            inchisdElement.textContent ='закрыто';
 
             
             // Translate elements with the class 'o-luna'
@@ -152,10 +156,27 @@ const clip = document.querySelectorAll('.clip')
 
       document.getElementById("show-menu").addEventListener("click", function() {
          var menu = document.getElementById("menu");
-         if (menu.style.display === "none") {
-             menu.style.display = "flex";
+         var currentOpacity = parseFloat(getComputedStyle(menu).opacity);
+   
+         if (currentOpacity === 0) {
+           menu.style.opacity = "1";
+           menu.style.display = "flex";
          } else {
-             menu.style.display = "none";
+           menu.style.opacity = "0";
+           menu.style.display = "none";
          }
-     });
+       });
+
+       document.getElementById("close-menu").addEventListener("click", function() {
+         var menu = document.getElementById("menu");
+         var currentOpacity = parseFloat(getComputedStyle(menu).opacity);
+   
+         if (currentOpacity === 1) {
+           menu.style.opacity = "0";
+           menu.style.display = "none";
+         } else {
+           menu.style.opacity = "1";
+           menu.style.display = "flex";
+         }
+       });
      
