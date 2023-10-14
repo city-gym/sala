@@ -234,9 +234,6 @@ header {
       margin-left: 1rem;
    }
 
-   .location div p:nth-of-type(1) {
-      display: none;
-   }
 
    .location img {
       size: 1.5rem;
@@ -245,9 +242,7 @@ header {
    .location div p:nth-of-type(2) {
       font-size: 1rem;
    }
-}
-
-@media(max-width:550px) {
+   
    .others {
       display: none;
    }
@@ -256,6 +251,12 @@ header {
       scale: 0.8;
       margin-right: 63vw;
    }
+}
+
+@media(max-width:550px) {
+   
+
+   
 
    .container-xl {
       padding: 0;
