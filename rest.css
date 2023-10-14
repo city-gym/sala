@@ -94,6 +94,7 @@
 }
 
 #menu{
+
    background-color: var(--black-90);
    /* display: none; */
    opacity: 0;
@@ -584,6 +585,11 @@
 }
 
 @media(max-width:575px){
+   #menu{
+      padding: 0.5rem 0.4rem;
+      position: unset;
+   }
+
    .prices-section .col-md-4:nth-child(odd){
       justify-content: center;
    }
