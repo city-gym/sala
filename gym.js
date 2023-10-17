@@ -92,12 +92,12 @@ const clip = document.querySelectorAll('.clip')
             slogan2Element.textContent = ' БУДЬ В ФОРМЕ';
             subSlogan1Element.textContent = 'Достигайте своих спортивных целей';
             subSlogan2Element.textContent = 'с сообществом CITY GYM';
-            graficElement.textContent = 'Рабочая программа:';
+            graficElement.textContent = 'Программа:';
             luniElement.textContent = 'Понед.-Пятница:';
             sambataElement.textContent = 'Суббота:';
             duminicaElement.textContent = 'Воскресенье:';
-            inchisElement.textContent = 'Закрыто на данный момент';
-            deschisElement.textContent = 'Открыто на данный момент!';
+            inchisElement.textContent = 'Закрыто сейчас!';
+            deschisElement.textContent = 'Открыто сейчас!';
             blaElement.textContent = '1 МЕСЯЦ';
             inchisdElement.textContent ='закрыто';
 
