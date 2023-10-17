@@ -200,6 +200,11 @@ typescale:
    font-weight: 500;
 }
 
+.basic-info .actual-data {
+   margin: 0;
+   font-weight: 500;
+   color: var(--black-90);
+}
 
 @media(max-width:1630px) {
    .hero-section {
@@ -352,7 +357,7 @@ typescale:
    }
 
    .date-concrete {
-      gap: 2rem;
+      gap: 3rem;
       margin-bottom: 0.5rem;
    }
 
@@ -436,7 +441,7 @@ typescale:
    }
 
    .inchis-deschis {
-      margin-bottom: 3.5rem;
+      margin-bottom: 2.5rem;
    }
 
 
@@ -466,7 +471,7 @@ typescale:
 
    .date-concrete .days,
    .date-concrete .hours {
-      font-size: 0.9rem;
+      font-size: 01rem;
    }
 
    .bottom-background {
@@ -480,7 +485,7 @@ typescale:
 
 @media(max-width:435px) {
    .hero-section {
-      height: 60vh;
+      height: 65vh;
    }
 
    .timetable p {
@@ -489,7 +494,7 @@ typescale:
 
    .slogan {
       margin-bottom: 1rem;
-      font-size: 3.1rem;
+      font-size: 3rem;
       line-height: 3.5rem;
    }
 
@@ -504,18 +509,14 @@ typescale:
    }
 
    .inchis-deschis {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
       border-radius: 0.4rem;
-   }
-
-   .slogan {
-      font-size: 2.7rem;
    }
 }
 
 @media(max-width:385px) {
    .slogan {
-      font-size: 2.5rem;
+      font-size: 2.9rem;
    }
 }
 
@@ -544,5 +545,12 @@ typescale:
 
    .hero-section img {
       height: 25rem;
+   }
+}
+
+
+@media(min-height:1076px){
+   .hero-section{
+      background-size: cover;
    }
 }
